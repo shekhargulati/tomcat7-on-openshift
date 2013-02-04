@@ -3,5 +3,3 @@
 # build hook has been run but before the application has been started back
 # up again.  This script gets executed directly, so it could be python, php,
 # ruby, etc.
-export
-declare -x OPENSHIFT_DATA_DIR="/var/lib/openshift/12592ddfd6824bd88a45a3dd111b2ced/app-root/data/"
