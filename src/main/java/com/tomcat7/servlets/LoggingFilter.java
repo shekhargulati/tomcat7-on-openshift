@@ -13,13 +13,12 @@ import javax.servlet.annotation.WebFilter;
 public class LoggingFilter implements Filter {
 
 	public void destroy() {
-		// TODO Auto-generated method stub
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response,
 			FilterChain chain) throws IOException, ServletException {
-		
-		System.out.println("Host name " + request.getRemoteHost());
+
+		System.out.println("Server Name : " + request.getServerName());
 		chain.doFilter(request, response);
 	}
 
